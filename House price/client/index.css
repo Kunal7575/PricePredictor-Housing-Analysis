@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.switch-field {
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+	
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+	
+}
+
+.switch-field label {
+	background-color: white;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgb(228, 7, 7);
+	box-shadow: inset 0 1px 3px rgb(221, 92, 92), 0 1px rgb(99, 20, 20);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: rgba(7, 76, 224, 0.5);
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+.form {
+	color: #fa0505;
+	max-width: 270px;
+	font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+	font-weight: normal;
+	line-height: 1.625;
+	margin: 8px auto;
+	padding-left: 16px;
+	z-index: 2;
+	box-shadow: 0 10px 30px rgba(7, 76, 224, 0.5);
+	backdrop-filter: blur(10px);
+	
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 8px;
+	
+}
+.area{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: white;
+  width: 76%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 5px;
+  
+}
+
+.location{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 76%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgb(221, 92, 92), 0 1px rgb(99, 20, 20);
+}
+
+.submit{
+  background: rgba(7, 76, 224, 0.5);
+  width: 76%;
+  border: 0;
+  margin: 25px 0 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+	height: 35px;
+	text-align: center;
+	border-radius: 5px;
+	
+}
+
+.result{
+		background: #dbd02f;
+		width: 76%;
+		border: 0;
+		margin: 25px 0 10px;
+		box-sizing: border-box;
+		font-size: 15px;
+		height: 35px;
+		text-align: center;
+}
+
+.img {
+	background: url('https://www.architecturebeast.com/wp-content/uploads/2014/09/Most_Beautiful_Houses_In_The_World_House_M_featured_on_architecture_beast_38.jpg');
+	background-repeat: no-repeat;
+  background-size: auto;
+  background-size:100% 100%;
+  /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px); */
+  /* filter: blur(15px); */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.clock{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url(img/clock.png);
+    background-size: cover;
+    border: 4px solid #091921;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+            inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+             0 -15px 15px rgba(0,0, 0, 0.3),
+            inset 0 -15px 15px rgba(0,0, 0, 0.3);  
+    /* opacity: 50%;     */
+    opacity: 300%;
+}
+.clock:before{
+	content: '';
+	position: absolute;
+	width:4.28px;
+	height: 4.28px;
+	background: rgba(7, 76, 224, 0.5);
+	border-radius: 50%;
+	z-index: 10000;
+	opacity: 300%;
+	}
+	.clock .hour,
+	.clock .min,
+	.clock .sec{
+		position: absolute;
+	
+	}
+	.clock .hour, .hr{
+	width: 45.71px;
+	height: 45.71px;
+	}
+	.clock .min, .mn{
+	width: 54.28px;
+	height: 54.28px;
+	
+	}
+	.clock .sec, .sc{
+	width: 65.71px;
+	height: 65.71px;
+	
+	}
+	.hr, .mn, .sc{
+		display: flex;
+		justify-content: center;
+		/* align-items: center; */
+		position: absolute;
+		border-radius: 50%;
+		opacity: 300%;
+	}
+	.hr:before{
+	   content: ''; 
+	   position: absolute;
+	   width: 2.28px;
+	   height: 22.8px;
+	   background:rgb(4, 80, 245) ;
+	   z-index: 10;
+	   border-radius: 6px 6px 0 0;
+	   opacity: 300%;
+	}
+	.mn:before{
+	   content: ''; 
+	   position: absolute;
+	   width: 1.14px;
+	   height: 25.71px;
+	   background:#fff ;
+	   z-index: 11;
+	   border-radius: 6px 6px 0 0;
+	   opacity: 300%;
+	}
+	.sc:before{
+	   content: ''; 
+	   position: absolute;
+	   width: 0.57px;
+	   height: 42.85px;
+	   background:#fff ;
+	   z-index: 12;
+	   border-radius: 6px 6px 0 0;
+	   opacity: 300%;
+	}
+	
+body, html {
+  height: 100%;
+}
